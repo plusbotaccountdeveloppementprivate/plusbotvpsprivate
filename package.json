@@ -1,0 +1,14 @@
+{
+  "name": "plusbot",
+  "version": "1.0.0",
+  "description": "discordbot",
+  "main": "main.js",
+  "scripts": {
+    "test": "main.js"
+  },
+  "keywords": [
+    "plusbot"
+  ],
+  "author": "zrefixiord",
+  "license": "ISC"
+}
