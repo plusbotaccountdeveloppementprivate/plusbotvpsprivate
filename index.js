@@ -22,7 +22,7 @@ bot.on('ready',() =>{
     console.log("PlusBot online\nNombre de serveurs: " + serverNumber + "\navec\n" + memberNumber + " utilisateurs");    
 });
 
-bot.login('');
+bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
 const channel = member.guild.channels.find('name', 'bienvenue');
