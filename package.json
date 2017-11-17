@@ -2,9 +2,9 @@
   "name": "plusbot",
   "version": "1.0.0",
   "description": "discordbot",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "test": "main.js"
+    "test": ""
   },
   "keywords": [
     "plusbot"
