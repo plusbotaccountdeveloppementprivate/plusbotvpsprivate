@@ -8,7 +8,7 @@ db.defaults({ bug:[], xp:[]})
     .write();
 
 var bot = new Discord.Client();
-var prefix = ("pb.");
+var prefix = ("p.");
 var randnum = 0;
 
 bot.on('ready',() =>{
@@ -16,7 +16,7 @@ bot.on('ready',() =>{
     var memberNumber = bot.users.size;
     var serverNumber = bot.guilds.size;
     
-    bot.user.setGame("pb.help | Désoler de l'incident de hier");   
+    bot.user.setGame("p.help - " + memberNumber + " utilisateurs " + ", " + serverNumber + " serveurs | PlusBot beta");   
     
     console.log("Le bot est prêt");
     console.log("PlusBot online\nNombre de serveurs: " + serverNumber + "\navec\n" + memberNumber + " utilisateurs");    
@@ -49,10 +49,10 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
             .setTitle('Liste des commandes')
             .setColor('#F40101')
-            .addField("Commandes utiles", "pb.help : pour afficher la liste des commandes\npb.bonjour : pour que le bot te dises au revoir\npb.avatar : pour qu'il envoie le lien de ton avatar\npb.ping : pour savoir le ping du bot \npb.cv : il te diras son humeur !\npb.bug pour envoyer le bug que tu as vu")
-            .addField("Administration", "pb.kick + [mention] pour kicker la personne mentionné . Vous devez avoir les permissions.\npb.ban + [mention] pour ban la personne mentionné nécessaires . Vous devez avoir les permissions nécessaires.\nLes messages de bienvenues et d'au revoir s'envoie dans un channel se nommant : `bienvenue` donc créer un channel `bienvenue`")
+            .addField("Commandes utiles", "p.help : pour afficher la liste des commandes\np.bonjour : pour que le bot te dises au revoir\np.avatar : pour qu'il envoie le lien de ton avatar\np.ping : pour savoir le ping du bot \np.cv : il te diras son humeur !\np.bug pour envoyer le bug que tu as vu")
+            .addField("Administration", "p.kick + [mention] pour kicker la personne mentionné . Vous devez avoir les permissions.\np.ban + [mention] pour ban la personne mentionné nécessaires . Vous devez avoir les permissions nécessaires.\nLes messages de bienvenues et d'au revoir s'envoie dans un channel se nommant : `bienvenue` donc créer un channel `bienvenue`")
             .addField("Créateur du bot seulement", "p.status [idle,dnd] pour changer le statut du bot")
-            .addField("Divers", "pb.onme : pour tout savoir sur moi")
+            .addField("Divers", "p.onme : pour tout savoir sur moi")
             .setFooter("Bot by ZrefiXiord")
         message.channel.sendEmbed(help_embed)
         console.log("help demandé");
@@ -192,4 +192,3 @@ function random(min, max) {
     min = Math.ceil(0);
     max = Math.floor(3);
     randnum = Math.floor(Math.random() * (max - min +1) +min);
-}
