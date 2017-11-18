@@ -16,7 +16,7 @@ bot.on('ready',() =>{
     var memberNumber = bot.users.size;
     var serverNumber = bot.guilds.size;
     
-    bot.user.setGame("p.help - " + memberNumber + " utilisateurs " + ", " + serverNumber + " serveurs | PlusBot beta");   
+    bot.user.setGame("p.help - " + memberNumber + " utilisateurs " + ", " + serverNumber + " serveurs | Désoler de l'incident d'hier");   
     
     console.log("Le bot est prêt");
     console.log("PlusBot online\nNombre de serveurs: " + serverNumber + "\navec\n" + memberNumber + " utilisateurs");    
