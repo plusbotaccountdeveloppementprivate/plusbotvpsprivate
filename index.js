@@ -19,14 +19,13 @@ bot.on('ready',() =>{
     function jeux() {
         
         
-          var answers = ['p.help by ZrefiXiord', 'Désoler des incidents', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} utilisateurs`];
+          var answers = ['p.help by ZrefiXiord', 'French Bot', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} utilisateurs`];
         
         
             return answers[Math.floor(Math.random()*answers.length)];
         }
         
-        setInterval(() => {
-        bot.user.setGame(jeux())     }, 10000) 
+,'        bot.user.setGame(jeux())     }, 10000) 
     
     
     console.log("Le bot est prêt");
