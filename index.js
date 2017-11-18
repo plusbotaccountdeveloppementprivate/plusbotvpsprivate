@@ -16,7 +16,18 @@ bot.on('ready',() =>{
     var memberNumber = bot.users.size;
     var serverNumber = bot.guilds.size;
     
-    bot.user.setGame("p.help - " + memberNumber + " utilisateurs " + ", " + serverNumber + " serveurs | Désoler de l'incident d'hier");   
+    function jeux() {
+        
+        
+          var answers = ['p.help by ZrefiXiord', 'Désoler des incidents', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} membres`];
+        
+        
+            return answers[Math.floor(Math.random()*answers.length)];
+        }
+        
+        setInterval(() => {
+        bot.user.setGame(jeux())     }, 10000) 
+    
     
     console.log("Le bot est prêt");
     console.log("PlusBot online\nNombre de serveurs: " + serverNumber + "\navec\n" + memberNumber + " utilisateurs");    
