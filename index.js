@@ -25,7 +25,7 @@ bot.on('ready',() =>{
             return answers[Math.floor(Math.random()*answers.length)];
         }
         
-,'        bot.user.setGame(jeux())     }, 10000) 
+bot.user.setGame(jeux())     }, 10000) 
     
     
     console.log("Le bot est prêt");
