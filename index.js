@@ -26,7 +26,7 @@ bot.on('ready',() =>{
 }
 
 setInterval(() => {
-client.user.setGame(jeux())     }, 10000)    
+bot.user.setGame(jeux())     }, 10000)    
 
     
     
