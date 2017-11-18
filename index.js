@@ -15,17 +15,19 @@ bot.on('ready',() =>{
     
     var memberNumber = bot.users.size;
     var serverNumber = bot.guilds.size;
-    
+
     function jeux() {
-        
-        
-          var answers = ['p.help by ZrefiXiord', 'French Bot', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} utilisateurs`];
-        
-        
-            return answers[Math.floor(Math.random()*answers.length)];
-        }
-        
-bot.user.setGame(jeux())     }, 10000) 
+
+
+  var answers = ['p.help by ZrefiXiord', 'PlusBot', ` être sur ${serverNumber} serveurs`, `${memberNumber} utilisateurs`];
+
+
+    return answers[Math.floor(Math.random()*answers.length)];
+}
+
+setInterval(() => {
+client.user.setGame(jeux())     }, 10000)    
+
     
     
     console.log("Le bot est prêt");
