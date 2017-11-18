@@ -72,7 +72,7 @@ bot.on('message', message => {
         var onme_embed = new Discord.RichEmbed()
             .setTitle('Tout savoir sur moi')
             .setColor('#00E910')
-            .addField("Sur moi", "Pour m'ajouter à ton serveur discord : https://discordapp.com/oauth2/authorize?client_id=374622953834283028&scope=bot&permissions=201354310 \nPour venir faire un tour sur mon serveur discord : https://discord.gg/2Ab5856 \nJe suis développé en node.js")
+            .addField("Sur moi", "Pour m'ajouter à ton serveur discord : https://discordapp.com/oauth2/authorize?client_id=374622953834283028&scope=bot&permissions=201354310 \n \nPour venir faire un tour sur mon serveur discord : https://discord.gg/2Ab5856 \n\nJe suis développé en node.js")
             .setFooter("Je suis développé par ZrefiXiord#3677")
         message.channel.sendEmbed(onme_embed)
         console.log("onme envoye");
