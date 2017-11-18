@@ -19,7 +19,7 @@ bot.on('ready',() =>{
     function jeux() {
         
         
-          var answers = ['p.help by ZrefiXiord', 'Désoler des incidents', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} membres`];
+          var answers = ['p.help by ZrefiXiord', 'Désoler des incidents', `être sur ${serverNumber} serveurs`, `avec ${memberNumber} utilisateurs`];
         
         
             return answers[Math.floor(Math.random()*answers.length)];
